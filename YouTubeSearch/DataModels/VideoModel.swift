@@ -50,7 +50,7 @@ struct VideoModel {
             completion(error,nil)
             return
         }
-        let urlStr:String = Constants.BASEURL+"&q=\(textToSearch)"+"&key=\(Constants.APIKEY)"
+        let urlStr:String = Constants.BASEURL+"&q=\(textToSearch.replacingOccurrences(of: " ", with: "+"))"+"&key=\(Constants.APIKEY)"
         let header:[String:String] = ["Content-Type":"application/json"]
         guard let request = URLRequest.buildRequest(method: .GET, parameters: nil, headers: header, urlStr: urlStr) else {
             let error = NSError(domain: "VacunAccion", code: 403, userInfo: [NSLocalizedDescriptionKey:"No se pudo realizar la conexión debido a un error interno."])

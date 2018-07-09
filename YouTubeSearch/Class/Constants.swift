@@ -11,7 +11,7 @@ import UIKit
 class Constants: NSObject {
     
     static let APIKEY = "AIzaSyBMp6bLMeGH6rTk1kV_iEcNi_8GnTpBddM"
-    static let BASEURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10"
+    static let BASEURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&type=video&maxResults=10"
     
 }
 
