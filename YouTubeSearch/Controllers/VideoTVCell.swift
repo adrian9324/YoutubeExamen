@@ -32,7 +32,10 @@ class VideoTVCell: UITableViewCell {
     ///
     /// - Parameter videModel: VideoModel
     func setUpCell(videModel:VideoModel){
-        self.lblVideo.text = "\(videModel.title)\n\(videModel.publishDate.datteFormaterDDMMMYYY!)"
+        var arrTextAttribute:[TextAttribute] = []
+        arrTextAttribute.append(TextAttribute(text: "\(videModel.title)", textFont: UIFont.systemFont(ofSize: 15), textColor: UIColor.black))
+        arrTextAttribute.append(TextAttribute(text: "\n\(videModel.publishDate.datteFormaterDDMMMYYY!)", textFont: UIFont.systemFont(ofSize: 12), textColor: UIColor.gray))
+        self.lblVideo.attributedText = CoreText().attributeTextWith(arrTextAttrbutes: arrTextAttribute)
         self.ivVideo.downloadedFrom(url: URL(string: videModel.imageUrl)!)
     }
 }

@@ -27,6 +27,7 @@
 		CC0FB55F20F3373100E66769 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FB55E20F3373000E66769 /* DateExtension.swift */; };
 		CC0FB56120F3400000E66769 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FB56020F3400000E66769 /* UIImageExtension.swift */; };
 		CC0FB56320F3504100E66769 /* Youtube.json in Resources */ = {isa = PBXBuildFile; fileRef = CC0FB56220F3504000E66769 /* Youtube.json */; };
+		CCEB148F20F3A24B004C6FB8 /* CoreText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB148E20F3A24B004C6FB8 /* CoreText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		CC0FB55E20F3373000E66769 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CC0FB56020F3400000E66769 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		CC0FB56220F3504000E66769 /* Youtube.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Youtube.json; sourceTree = "<group>"; };
+		CCEB148E20F3A24B004C6FB8 /* CoreText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		CC0FB55020F3212B00E66769 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				CCEB148E20F3A24B004C6FB8 /* CoreText.swift */,
 				CC0FB55120F3214E00E66769 /* ConnectToNetwork.swift */,
 				CC0FB55620F3224300E66769 /* Constants.swift */,
 			);
@@ -347,6 +350,7 @@
 				CC0FB54C20F3173300E66769 /* VideoVC.swift in Sources */,
 				CC0FB55B20F3309A00E66769 /* StringExtension.swift in Sources */,
 				CC0FB55920F32BA000E66769 /* ViewControllerExtension.swift in Sources */,
+				CCEB148F20F3A24B004C6FB8 /* CoreText.swift in Sources */,
 				CC0FB54720F2AC5100E66769 /* HomeVC.swift in Sources */,
 				CC0FB51420F29EFE00E66769 /* AppDelegate.swift in Sources */,
 				CC0FB55520F3221400E66769 /* URLRequestExtension.swift in Sources */,

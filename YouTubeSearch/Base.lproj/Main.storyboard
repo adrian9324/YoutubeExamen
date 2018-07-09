@@ -25,20 +25,20 @@
                                 <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellVideos" rowHeight="310" id="4uO-Wa-4oB" customClass="VideoTVCell" customModule="YouTubeSearch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="310"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellVideos" rowHeight="280" id="4uO-Wa-4oB" customClass="VideoTVCell" customModule="YouTubeSearch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="280"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4uO-Wa-4oB" id="vm2-Bz-Re6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="279.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="vAe-L8-z8V">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJJ-sV-WWl">
-                                                    <rect key="frame" x="12" y="199" width="351" height="100"/>
+                                                    <rect key="frame" x="12" y="199" width="351" height="70"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="pAD-8i-qdR"/>
+                                                        <constraint firstAttribute="height" constant="70" id="pAD-8i-qdR"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -55,6 +55,7 @@
                                                 <constraint firstItem="GJJ-sV-WWl" firstAttribute="bottom" secondItem="vm2-Bz-Re6" secondAttribute="bottomMargin" id="vuu-wi-IOo"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <connections>
                                             <outlet property="ivVideo" destination="vAe-L8-z8V" id="AKN-aY-PL4"/>
                                             <outlet property="lblVideo" destination="GJJ-sV-WWl" id="T04-2V-Sje"/>
@@ -124,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dt2-oK-o59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891.5" y="792.5"/>
+            <point key="canvasLocation" x="890.39999999999998" y="792.05397301349331"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="tne-QT-ifu">
