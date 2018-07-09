@@ -26,6 +26,7 @@
 		CC0FB55D20F3350200E66769 /* VideoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FB55C20F3350200E66769 /* VideoTVCell.swift */; };
 		CC0FB55F20F3373100E66769 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FB55E20F3373000E66769 /* DateExtension.swift */; };
 		CC0FB56120F3400000E66769 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FB56020F3400000E66769 /* UIImageExtension.swift */; };
+		CC0FB56320F3504100E66769 /* Youtube.json in Resources */ = {isa = PBXBuildFile; fileRef = CC0FB56220F3504000E66769 /* Youtube.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		CC0FB55C20F3350200E66769 /* VideoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTVCell.swift; sourceTree = "<group>"; };
 		CC0FB55E20F3373000E66769 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CC0FB56020F3400000E66769 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		CC0FB56220F3504000E66769 /* Youtube.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Youtube.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		CC0FB52720F29EFE00E66769 /* YouTubeSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC0FB56220F3504000E66769 /* Youtube.json */,
 				CC0FB52820F29EFE00E66769 /* YouTubeSearchTests.swift */,
 				CC0FB52A20F29EFE00E66769 /* Info.plist */,
 			);
@@ -321,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0FB56320F3504100E66769 /* Youtube.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +570,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4NWNTA85V;
 				INFOPLIST_FILE = YouTubeSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,6 +591,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4NWNTA85V;
 				INFOPLIST_FILE = YouTubeSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,6 +611,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4NWNTA85V;
 				INFOPLIST_FILE = YouTubeSearchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -624,6 +631,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4NWNTA85V;
 				INFOPLIST_FILE = YouTubeSearchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

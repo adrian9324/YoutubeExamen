@@ -6,10 +6,26 @@
 //  Copyright © 2018 Adrián Salazar G. All rights reserved.
 //
 
+import UIKit
 import XCTest
 @testable import YouTubeSearch
 
 class YouTubeSearchTests: XCTestCase {
+    
+    lazy var responseDic:[String:Any]? = {
+        let bundle = Bundle(for: type(of: self))
+        guard let pathFile = bundle.path(forResource: "Youtube", ofType: "json") else{
+            return nil
+        }
+        do{
+            let urlFile = URL(fileURLWithPath: pathFile)
+            let data = try Data(contentsOf: urlFile)
+            let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String:Any]
+            return dictionary
+        }catch{
+            return nil
+        }
+    }()
     
     override func setUp() {
         super.setUp()
@@ -21,16 +37,20 @@ class YouTubeSearchTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetVideos(){
+        guard let response = responseDic, let item = response["items"] as? [[String:Any]] else{
+            XCTFail("Error con el json")
+            return
+        }
+        XCTAssert(!VideoModel.getVideosModelWith(arrDic: item).isEmpty)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testCountArrayVideos(){
+        guard let response = responseDic, let item = response["items"] as? [[String:Any]] else{
+            XCTFail("Error con el json")
+            return
         }
+        XCTAssertEqual(VideoModel.getVideosModelWith(arrDic: item).count, 10)
     }
     
 }
